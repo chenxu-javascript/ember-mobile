@@ -3,10 +3,13 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-quickstart',
+    podModulePrefix: 'ember-quickstart/business',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
+    contentSecurityPolicyHeader: 'Disabled-Content-Security-Policy',
     EmberENV: {
+      isMobile: true,
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
